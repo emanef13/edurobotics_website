@@ -7,33 +7,39 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
+    <!-- Language Switcher -->
+    <div class="bg-gray-800 text-white py-2">
+        <div class="max-w-6xl mx-auto px-4 flex justify-end space-x-4">
+            <button onclick="changeLanguage('en')" class="hover:text-blue-400" id="en-btn">English</button>
+            <button onclick="changeLanguage('gr')" class="hover:text-blue-400" id="gr-btn">Ελληνικά</button>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="text-2xl font-bold text-blue-600">EduRobotics</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#product" class="text-gray-700 hover:text-blue-600">Product</a>
-                    <a href="#features" class="text-gray-700 hover:text-blue-600">Features</a>
-                    <a href="#education" class="text-gray-700 hover:text-blue-600">Education</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                    <a href="#product" class="text-gray-700 hover:text-blue-600" data-lang="nav-product">Product</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600" data-lang="nav-features">Features</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-600" data-lang="nav-education">Education</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600" data-lang="nav-contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <div class="bg-blue-600 text-white">
         <div class="max-w-6xl mx-auto px-4 py-20">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4" data-lang="hero-title">
                         Bring Robotics Education to Life
                     </h1>
-                    <p class="text-xl mb-8">
+                    <p class="text-xl mb-8" data-lang="hero-description">
                         Empower high school students with hands-on robotics learning through our 4-wheel robotic platform and comprehensive educational materials.
                     </p>
-                    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition" data-lang="hero-cta">
                         Get Started Today
                     </button>
                 </div>
@@ -47,26 +53,26 @@
     <!-- Features Section -->
     <div id="features" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Our Platform?</h2>
+            <h2 class="text-3xl font-bold text-center mb-12" data-lang="feature-title">Why Choose Our Platform?</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="text-blue-600 text-4xl mb-4">🤖</div>
-                    <h3 class="text-xl font-semibold mb-2">Hands-on Learning</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-semibold mb-2" data-lang="feature-1">Hands-on Learning</h3>
+                    <p class="text-gray-600" data-lang="feature-1-discreption">
                         Students learn by doing with our robust 4-wheel robotic platform, perfect for real-world experimentation.
                     </p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="text-blue-600 text-4xl mb-4">📘</div>
-                    <h3 class="text-xl font-semibold mb-2">Comprehensive Guide</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-semibold mb-2" data-lang="feature-2">Comprehensive Guide</h3>
+                    <p class="text-gray-600" data-lang="feature-2-discreption">
                         Our educational book breaks down complex concepts into easy-to-understand lessons.
                     </p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="text-blue-600 text-4xl mb-4">💡</div>
-                    <h3 class="text-xl font-semibold mb-2">Programming Skills</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-semibold mb-2" data-lang="feature-3">Programming Skills</h3>
+                    <p class="text-gray-600" data-lang="feature-3-discreption">
                         Students develop real programming skills while controlling and customizing their robots.
                     </p>
                 </div>
@@ -185,6 +191,74 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Translations object
+        const translations = {
+            en: {
+                "nav-product": "Product",
+                "nav-features": "Features",
+                "nav-education": "Education",
+                "nav-contact": "Contact",
+                "hero-title": "Bring Robotics Education to Life",
+                "hero-description": "Empower high school students with hands-on robotics learning through our 4-wheel robotic platform and comprehensive educational materials.",
+                "hero-cta": "Get Started Today",
+                "feature-title": "Why Choose Our Platform?",
+                "feature-1": "Hands-on Learning",
+                "feature-1-discreption": "Students learn by doing with our robust 4-wheel robotic platform, perfect for real-world experimentation.",
+                "feature-2": "Comprehensive Guide",
+                "feature-2-discreption": "Our educational book breaks down complex concepts into easy-to-understand lessons.",
+                "feature-3": "Programming Skills",
+                "feature-3-discreption": "Students develop real programming skills while controlling and customizing their robots.",
+                // Add all other translations here
+            },
+            gr: {
+                "nav-product": "Εκπαιδευτικά πακέτα",
+                "nav-features": "Χαρακτηριστικά",
+                "nav-education": "Eκπαίδευση",
+                "nav-contact": "Επικοινωνία",
+                "hero-title": "Φέρτε την εκπαίδευση ρομποτικής στη ζωή",
+                "hero-description": "Εξουσιοδοτήστε τους μαθητές του λυκείου με μάθηση ρομποτικής μέσω της πλατφόρμας ρομποτικής μας με 4 τροχούς και τα περιεχόμενα εκπαίδευσης.",
+                "hero-cta": "Ξεκινήστε σήμερα",
+                "feature-title": "Γιατί να επιλέξετε την πλατφόρμα μας;",
+                "feature-1": "Μάθηση μέσω της πράξης",
+                "feature-1-discreption": "Οι μαθητές μαθαίνουν μέσω της πράξης με την ανθεκτική πλατφόρμα ρομποτικής μας με 4 τροχούς, ιδανική για πειραματισμό στον πραγματικό κόσμο.",
+                "feature-2": "Ολοκληρωμένος οδηγός",
+                "feature-2-discreption": "Το εκπαιδευτικό μας βιβλίο αναλύει πολύπλοκες έννοιες σε μαθήματα εύκολα κατανοητά.",
+                "feature-3": "Δεξιότητες προγραμματισμού",
+                "feature-3-discreption": "Οι μαθητές αναπτύσσουν πραγματικές δεξιότητες προγραμματισμού ελέγχοντας και προσαρμόζοντας τα ρομπότ τους.",
+
+                // Add all other translations here
+            }
+        };
+
+        // Function to change language
+        function changeLanguage(lang) {
+            // Update active language button style
+            document.getElementById('en-btn').classList.toggle('text-blue-400', lang === 'en');
+            document.getElementById('es-btn').classList.toggle('text-blue-400', lang === 'es');
+
+            // Update all translated elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Store language preference
+            localStorage.setItem('preferred-language', lang);
+        }
+
+        // Initialize language based on stored preference or default to English
+        document.addEventListener('DOMContentLoaded', () => {
+            const storedLang = localStorage.getItem('preferred-language') || 'en';
+            changeLanguage(storedLang);
+        });
+    </script>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
