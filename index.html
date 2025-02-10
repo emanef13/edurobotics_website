@@ -88,22 +88,22 @@
                     <img src="images/robot_learn.jpg" alt="Educational book and robot" class="rounded-lg shadow-xl"/>
                 </div>
                 <div class="md:w-1/2 md:pl-12">
-                    <h2 class="text-3xl font-bold mb-6">Complete Learning Package</h2>
+                    <h2 class="text-3xl font-bold mb-6" data-lang="product-title">Complete Learning Package</h2>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-lang="product-char1">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span>4-wheel robotic platform with precision motors</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-lang="product-char1">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span>Comprehensive educational book with step-by-step tutorials</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-lang="product-char1">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span>Programming examples and exercises</span>
@@ -117,24 +117,24 @@
     <!-- Education Section -->
     <div id="education" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Perfect for Education</h2>
+            <h2 class="text-3xl font-bold text-center mb-12" data-lang="edu-title">Perfect for Education</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">For Students</h3>
+                    <h3 class="text-xl font-semibold mb-4" data-lang="edu-subtitle1">For Students</h3>
                     <ul class="space-y-3 text-gray-600">
-                        <li>• Hands-on experience with robotics</li>
-                        <li>• Learn programming fundamentals</li>
-                        <li>• Develop problem-solving skills</li>
-                        <li>• Build confidence in STEM subjects</li>
+                        <li data-lang="edu-students1">• Hands-on experience with robotics</li>
+                        <li data-lang="edu-students2">• Learn programming fundamentals</li>
+                        <li data-lang="edu-students3">• Develop problem-solving skills</li>
+                        <li data-lang="edu-students4">• Build confidence in STEM subjects</li>
                     </ul>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">For Teachers</h3>
+                    <h3 class="text-xl font-semibold mb-4" data-lang="edu-subtitle2">For Teachers</h3>
                     <ul class="space-y-3 text-gray-600">
-                        <li>• Ready-to-use curriculum materials</li>
-                        <li>• Engaging practical exercises</li>
-                        <li>• Assessment guidelines</li>
-                        <li>• Technical support available</li>
+                        <li data-lang="edu-teachers1">• Ready-to-use curriculum materials </li>
+                        <li data-lang="edu-teachers2">• Engaging practical exercises</li>
+                        <li data-lang="edu-teachers3">• Assessment guidelines</li>
+                        <li data-lang="edu-teachers4">• Technical support available</li>
                     </ul>
                 </div>
             </div>
@@ -144,30 +144,30 @@
     <!-- Contact Section -->
     <div id="contact" class="bg-gray-100 py-20">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <h2 class="text-3xl font-bold text-center mb-12" data-lang="contact-title">Get in Touch</h2>
             <div class="max-w-xl mx-auto bg-white rounded-lg shadow-md p-8">
                 <!-- Success message (hidden by default) -->
-                <div id="successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4">
+                <div id="successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" data-lang="contact-success">
                     Message sent successfully! We'll get back to you soon.
                 </div>
                 <!-- Error message (hidden by default) -->
-                <div id="errorMessage" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+                <div id="errorMessage" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" data-lang="contact-fail">
                     Oops! Something went wrong. Please try again.
                 </div>
                 <form id="contactForm" class="space-y-6">
                     <div>
-                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <label class="block text-gray-700 mb-2" data-lang="contact-name" for="name">Name</label>
                         <input type="text" name="name" id="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"/>
                     </div>
                     <div>
-                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <label class="block text-gray-700 mb-2" data-lang="contact-email" for="email">Email</label>
                         <input type="email" name="email" id="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"/>
                     </div>
                     <div>
-                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <label class="block text-gray-700 mb-2" data-lang="contact-msg" for="message">Message</label>
                         <textarea name="message" id="message" required rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition" data-lang="contact-send">
                         Send Message
                     </button>
                 </form>
@@ -181,12 +181,12 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-2xl font-bold mb-4 md:mb-0">EduRobotics</div>
                 <div class="flex space-x-6">
-                    <a href="#" class="hover:text-blue-400">Privacy Policy</a>
-                    <a href="#" class="hover:text-blue-400">Terms of Service</a>
-                    <a href="#" class="hover:text-blue-400">Contact</a>
+                    <a href="#" class="hover:text-blue-400" data-lang="footer-privacy">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-400" data-lang="footer-terms">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-400" data-lang="footer-contact">Contact</a>
                 </div>
             </div>
-            <div class="text-center mt-8 text-gray-400">
+            <div class="text-center mt-8 text-gray-400" data-lang="footer-rights">
                 © 2025 EduRobotics. All rights reserved.
             </div>
         </div>
@@ -210,6 +210,32 @@
                 "feature-2-discreption": "Our educational book breaks down complex concepts into easy-to-understand lessons.",
                 "feature-3": "Programming Skills",
                 "feature-3-discreption": "Students develop real programming skills while controlling and customizing their robots.",
+                "product-title": "Complete Learning Package",
+                "product-char1": "4-wheel robotic platform with precision motors",
+                "product-char2": "Comprehensive educational book with step-by-step tutorials",
+                "product-char3": "Programming examples and exercises",
+                "edu-title": "Perfect for Education",
+                "edu-subtitle1": "For Students",
+                "edu-students1": "• Hands-on experience with robotics",
+                "edu-students2": "• Learn programming fundamentals",
+                "edu-students3": "• Develop problem-solving skills",
+                "edu-students4": "• Build confidence in STEM subjects",
+                "edu-subtitle2": "For Teachers",
+                "edu-teachers1": "• Ready-to-use curriculum materials",
+                "edu-teachers2": "• Engaging practical exercises",
+                "edu-teachers3": "• Assessment guidelines",
+                "edu-teachers4": "• Technical support available",
+                "contact-title": "Get in Touch",
+                "contact-name": "Name",
+                "contact-email": "Email",
+                "contact-msg": "Message",
+                "contact-send": "Send Message",
+                "contact-success": "Message sent successfully! We'll get back to you soon.",
+                "contact-fail": "Oops! Something went wrong. Please try again.",
+                "footer-privacy": "Privacy Policy",
+                "footer-terms": "Terms of Service",
+                "footer-contact": "Contact",
+                "footer-rights": "© 2025 EduRobotics. All rights reserved."
                 // Add all other translations here
             },
             gr: {
@@ -227,7 +253,32 @@
                 "feature-2-discreption": "Το εκπαιδευτικό μας βιβλίο αναλύει πολύπλοκες έννοιες σε μαθήματα εύκολα κατανοητά.",
                 "feature-3": "Δεξιότητες προγραμματισμού",
                 "feature-3-discreption": "Οι μαθητές αναπτύσσουν πραγματικές δεξιότητες προγραμματισμού ελέγχοντας και προσαρμόζοντας τα ρομπότ τους.",
-
+                "product-title": "Ολοκληρωμένο πακέτο μάθησης",
+                "product-char1": "Πλατφόρμα ρομποτικής με 4 τροχούς και ακριβείς κινητήρες",
+                "product-char2": "Ολοκληρωμένο εκπαιδευτικό βιβλίο με βήμα-βήμα οδηγίες",
+                "product-char3": "Παραδείγματα και ασκήσεις προγραμματισμού",
+                "edu-title": "Ιδανικό για την εκπαίδευση",
+                "edu-subtitle1": "Για τους μαθητές",
+                "edu-students1": "• Εμπειρία ρομποτικής μέσω της πράξης",
+                "edu-students2": "• Μάθηση των θεμελιωδών αρχών του προγραμματισμού",
+                "edu-students3": "• Ανάπτυξη δεξιοτήτων επίλυσης προβλημάτων",
+                "edu-students4": "• Ενίσχυση της αυτοπεποίθησης στα μαθηματικά και τις επιστήμες",
+                "edu-subtitle2": "Για τους εκπαιδευτικούς",
+                "edu-teachers1": "• Έτοιμα εκπαιδευτικά υλικά",
+                "edu-teachers2": "• Ενδιαφέρουσες πρακτικές ασκήσεις",
+                "edu-teachers3": "• Κατευθυντήριες οδηγίες αξιολόγησης",
+                "edu-teachers4": "• Διαθέσιμη τεχνική υποστήριξη",
+                "contact-title": "Επικοινωνήστε μαζί μας",
+                "contact-name": "Όνομα",
+                "contact-email": "Email",
+                "contact-msg": "Μήνυμα",
+                "contact-send": "Αποστολή μηνύματος",
+                "contact-success": "Το μήνυμα στάλθηκε με επιτυχία! Θα επικοινωνήσουμε σύντομα.",
+                "contact-fail": "Ωχ! Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.",
+                "footer-privacy": "Πολιτική Απορρήτου",
+                "footer-terms": "Όροι Χρήσης",
+                "footer-contact": "Επικοινωνία",
+                "footer-rights": "© 2025 EduRobotics. Με επιφύλαξη παντός δικαιώματος."
                 // Add all other translations here
             }
         };
